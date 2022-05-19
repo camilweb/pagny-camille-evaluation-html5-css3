@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mint! Agence Digitale Créative</title>
+    <meta name="description" content="Notre agence digitale et créative vous accompagne dans la réalisation de vos supports numériques, de la conception au développement">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav id="menu">
+        <div>
+            <img id="logo" src="img/LOGO.png" alt="Logo de Mint!">
+        </div>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="#portfolio">PORTFOLIO</a>
+                </li>
+                <li>
+                    <a href="#about">A PROPOS</a>
+                </li>
+                <li>
+                    <a href="#blog">BLOG</a>
+                </li>
+                <li>
+                    <a href="#contact">CONTACT</a>
+                </li>
+            </ul>
+        </nav>
+
+    </nav>
+
+    <header>
+
+        <div id="header">
+            <div class="home">
+                <h1>MINT !<br>Agence Digitale Créative</h1>
+    
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A vero provident molestias sunt sit blanditiis beatae natus aperiam et libero.</p>
+    
+                <a id="contact-us" href="#contact" class="btn">NOUS CONTACTER</a>
+    
+            </div>
+            <div class="couv">
+                <img src="img/verne-ho-0LAJfSNa-xQ-unsplash.jpg" alt="architecture">
+            </div>
+        </div>
+        
+    </header>
+
+    <section id="portfolio">
+
+        <h2>Nos travaux</h2>
+
+        <input class="hidden" type="radio" name="filter" id="tout" checked>
+        <input class="hidden" type="radio" name="filter" id="marque">
+        <input class="hidden" type="radio" name="filter" id="illustration">
+        <input class="hidden" type="radio" name="filter" id="web">
+
+        <div id="filter">
+            <ul>
+                <li>
+                    <label for="tout" class="pointer">TOUT</label>
+                </li>
+                <li>
+                    <label for="marque" class="pointer">MARQUE</label>
+                </li>
+                <li>
+                    <label for="illustration" class="pointer">ILLUSTRATION</label>
+                </li>
+                <li>
+                    <label for="web" class="pointer">WEB</label>
+                </li>
+            </ul>
+        </div>
+
+        <div class="grid-container">
+            <div id="project1" data-filter="marque">
+                <img src="img/portfolio/jan-kopriva.jpg" alt="Jan Kopriva">
+                <div class="project-filter">
+                    <h3>ART</h3>
+                    <p>Image de marque</p>
+                </div>
+            </div>
+            <div id="project2" data-filter="web">
+                <img src="img/portfolio/krisztian-tabori.jpg" alt="krisztian Tabori">
+                <figure class="project-filter">
+                    <h3>ART</h3>
+                    <p>Image de marque</p>
+                </figure>
+            </div>
+            <div id="project3" data-filter="illustration">
+                <img src="img/portfolio/stephany-lorena.jpg" alt="Stephany Lorena">
+                <div class="project-filter">
+                    <h3>ART</h3>
+                    <p>Image de marque</p>
+                </div>
+            </div>
+            <div id="project4" data-filter="web">
+                <img src="img/portfolio/mk-2.jpg" alt="MK 2">
+                <div class="project-filter">
+                    <h3>ART</h3>
+                    <p>Image de marque</p>
+                </div>
+            </div>
+            <div id="project5" data-filter="illustration">
+                <img src="img/portfolio//library-of-congress.jpg" alt="Library of Congress">
+                <div class="project-filter">
+                    <h3>ART</h3>
+                    <p>Image de marque</p>
+                </div>
+            </div>
+            <div id="project6" data-filter="illustration">
+                <img src="img/portfolio/everdrop.jpg" alt="Everdrop">
+                <div class="project-filter">
+                    <h3>ART</h3>
+                    <p>Image de marque</p>
+                </div>
+            </div>
+
+        </div>
+
+        <a href="#" class="btn">EN VOIR PLUS</a>
+
+    </section>
+
+    <section id="partners">
+
+        <div class="flex-partners">
+            <img src="img/partners/partner1.png" alt="partner 1">
+            <img src="img/partners/partner2.png" alt="partner 2">
+            <img src="img/partners/partner3.png" alt="partner 3">
+            <img src="img/partners/partner4.png" alt="partner 4">
+            <img src="img/partners/partner5.png" alt="partner 5">
+            <img src="img/partners/partner6.png" alt="partner 6">
+        </div>
+
+    </section>
+
+    <section id="about">
+
+        <h2>à propos</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis totam iste nulla labore, itaque tempora expedita earum quasi provident quas!</p>
+
+        <div class="flex-team">
+            <div class="flex-item1">
+                <div class="path">
+                    <p class="nom">Sergio</p>
+                    <p class="job">Web Designer</p>
+                </div>
+                <img src="img/team/sergio-de-paula.jpg" alt="Sergio De Paula webdesigner">
+                
+            </div>
+
+            <div class="flex-item2">
+                <div class="path">
+                    <p class="nom">Stéphanie</p>
+                    <p class="job">Web Designer</p>
+                </div>
+                <img src="img/team/stephanie-liverani.jpg" alt="Sergio De Paula webdesigner">
+                
+            </div>
+
+            <div class="flex-item3">
+                <h3>Un petit peu plus</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, incidunt. Inventore esse repellat natus ipsam quam nostrum accusamus ut amet.</p>
+                <a href="#">Lire la suite</a>
+            </div>
+
+        </div>
+
+        
+    </section>
+    
+    <section id="blog">
+        <h2>Notre blog</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis totam iste nulla labore, itaque tempora expedita earum quasi provident quas!</p>
+
+        <div class="flex-blog">
+            <div>
+                <div class="img-container">
+                    <img src="img/blog/everdrop.jpg" alt="Everdrop">
+                    <div class="filter">
+                        <h3>Lire la suite</h3>
+                    </div>
+                </div>
+                <div class="txt">
+                    <h3>SUPER BLOG !</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, maiores.</p>
+                    <p class="date">2 mai 2022</p>
+                </div>
+                
+            </div>
+
+            <div>
+                <div class="img-container">
+                    <img src="img/blog/boxed-water-is-better.jpg" alt="Boxed water is better">
+                    <div class="filter">
+                        <h3>Lire la suite</h3>
+                    </div>
+                </div>
+                <div class="txt">
+                    <h3>SUPER ARTICLE !</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, maiores.</p>
+                    <p class="date">11 mai 2022</p>
+                </div>
+                
+            </div>
+
+            <div>
+                <div class="img-container">
+                    <img src="img/blog/ellen-qin.jpg" alt="Ellen Qin">
+                    <div class="filter">
+                        <h3>Lire la suite</h3>
+                    </div>
+                </div>
+                <div class="txt">
+                    <h3>SUPER ARTICLE BLOG !</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, maiores.</p>
+                    <p class="date">13 mai 2022</p>
+                </div>
+                
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="contact">
+
+        <h2>Nous contacter</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus exercitationem culpa architecto esse voluptatem sed fugiat minus numquam dicta pariatur.</p>
+
+        <h3>Envoyer-nous un message</h3>
+
+        <div class="grid-contact">
+            <form>
+                <div>
+                    <input type="text" placeholder="Nom et prénom">
+                </div>
+                <div>
+                    <input type="email" placeholder="Adresse mail">
+                </div>
+                <div>
+                    <textarea name="message" placeholder="Votre message" cols="30" rows="10"></textarea>
+                </div>
+                <div>
+                    <button type="submit" class="btn">ENVOYER</button>
+                </div>
+    
+            </form>
+    
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1014.4449574420371!2d1.4013854253541767!3d43.58414355829369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aeba53a739cc1d%3A0xd924d2969bea1bdb!2s150%20Rue%20Nicolas%20Louis%20Vauquelin%2C%2031100%20Toulouse!5e0!3m2!1sfr!2sfr!4v1652867334020!5m2!1sfr!2sfr" width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+            </div>
+        </div>
+        
+
+        <div id="container-contact">
+                <img src="img/icones/adresse.png" alt="Adresse">
+                <img src="img/icones/tel.png" alt="Téléphone">
+                <img src="img/icones/mail.png" alt="Email">
+                <p>150 rue Nicolas Louis Vauquelin<br>31100 Toulouse</p>
+                <p>+33 5 34 61 26 23</p>
+                <p>mint@mintmail.com</p>
+        </div>
+
+        <div id="reseaux">
+            <a href="#contact"><img src="img/reseaux/shape1.png" alt="Page Facebook"></a>
+            <a href="#contact"><img src="img/reseaux/shape2.png" alt="Compte Tweeter"></a>
+            <a href="#contact"><img src="img/reseaux/shape3.png" alt="Site"></a>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <div id="footer">
+            <div class="copyright">
+                <img id="white-logo" src="img/LOGO_white.png" alt="Logo de Mint!">
+                <p>2005 / 2022 - Mint - Tous droits réservés</p>
+            </div>
+            <div class="backtop">
+                <div class="return">
+                    <a href="#top">Retour en haut</a>
+                </div>
+                <a href="#top"><img id="arrow" src="img/ico-haut-page.png" alt="Retour en haut de page"></a>
+            </div>
+        </div>
+
+    </footer>
+
+
+</body>
+</html>
