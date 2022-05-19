@@ -202,6 +202,10 @@ header img{
     margin-right: auto;
 }
 
+.grid-container p{
+    text-align: center;
+}
+
 #project1, #project2, #project3, #project4, #project5, #project6{
     position: relative;
 }
