@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: white;
     font-family: 'Montserrat', sans-serif;
@@ -64,7 +68,7 @@ h2{
 
 #menu{
     width: 100%;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     position: sticky;
     top: 0;
     padding: 20px 0 10px 0;
@@ -200,6 +204,7 @@ header img{
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
+    overflow: hidden;
 }
 
 .grid-container p{
@@ -261,6 +266,12 @@ h3{
     display: none;
 }
 
+#marque:checked~.grid-container,
+#illustration:checked~.grid-container,
+#web:checked~.grid-container{
+    grid-template-rows: 1fr;
+}
+
 #marque:checked~.grid-container [data-filter="marque"] {
     display: block;
 }
@@ -307,6 +318,14 @@ h3{
 
 
 /*PARTNERS*/
+
+#partners{
+    background-color: #fdfdfd;
+}
+
+#partners h2{
+    display: none;
+}
 
 .flex-partners{
     display: flex;
@@ -385,6 +404,7 @@ h3{
 .flex-item3{
     text-align: center;
     padding-top: 20px;
+    border: #fdfdfd 1px solid;
 }
 
 #about a{
@@ -402,10 +422,9 @@ h3{
     .flex-team{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr 110px;
         column-gap: 20px;
         width: 100%;
-
     }
 
     .flex-item3 p{
@@ -445,6 +464,10 @@ h3{
 
 
 /*BLOG*/
+
+#blog{
+    background-color: #fdfdfd;
+}
 
 #blog h2{
     text-align: center;
@@ -539,6 +562,7 @@ form input, textarea{
     font-weight: 500;
     font-size: 11px;
     border: none;
+    background-color: #fdfdfd;
 }
 
 form input::placeholder{
@@ -551,6 +575,8 @@ form textarea::placeholder{
 }
 
 iframe{
+    width: 100%;
+    height: auto;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -643,16 +669,16 @@ footer p, footer a{
     align-items: center;
     justify-content: space-between;
     padding-top: 30px;
+    height: 80px;
 }
 
-.copyright{
-    display: flex;
-    gap: 5px;
-    align-items: center;
-}
-
-.copyright p{
+#footer p{
     text-align: left;
+    margin: 0;
+}
+
+#footer a{
+    padding: 0;
 }
 
 #white-logo{
@@ -660,18 +686,15 @@ footer p, footer a{
     height: 20px;
 }
 
-.backtop{
-    align-items: center;
+#copyright, .backtop{
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     gap: 5px;
 }
 
-.backtop a{
-    padding: 0;
-}
-
 #arrow{
-    width: 12px;
+    width: 15px;
     transform: rotate(90deg);
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
@@ -693,4 +716,12 @@ footer p, footer a{
     -moz-transform: rotate(0);
     -ms-transform: rotate(0);
     -o-transform: rotate(0);
+}
+
+
+@media screen and (min-width:500px){
+    
+    #copyright, .backtop{
+        gap: 20px;
+    }
 }
