@@ -20,6 +20,7 @@ body{
 
 section{
     padding: 20px;
+    scroll-margin-top: 90px;
 }
 
 a{
@@ -237,7 +238,12 @@ h3{
     margin: 0;
 }
 
-#project1 img:hover + .project-filter, #project2 img:hover + .project-filter, #project3 img:hover + .project-filter, #project4 img:hover + .project-filter, #project5 img:hover + .project-filter, #project6 img:hover + .project-filter{
+#project1:hover .project-filter,
+#project2:hover .project-filter, 
+#project3:hover .project-filter, 
+#project4:hover .project-filter, 
+#project5:hover .project-filter, 
+#project6:hover .project-filter{
     display: block;
 }
 
@@ -514,7 +520,7 @@ h3{
     display: none;
 }
 
-.img-container img:hover + .filter{
+.img-container:hover .filter{
     display: block;
 }
 
